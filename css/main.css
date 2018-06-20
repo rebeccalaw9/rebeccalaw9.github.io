@@ -1,0 +1,144 @@
+/********BASE STYLES*******/
+
+#about, #skills, #work, #contact {
+  height: 600px;
+  margin: none;
+}
+/*****GRID*****/
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/************HEADER*************/
+
+header {
+  height:900px;
+  background: url('../img/hero.png');
+  background-size: cover;
+}
+section #skills{
+  height: 900px;
+  background: url('../img/background.png');
+  background-size: auto;
+}
+ header h1 {
+  font-size: 30px;
+  font-family:'Poiret One', cursive;
+  padding: 75px 0px;
+}
+
+header h1, h2 {
+  float: left;
+}
+
+h2, h3 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+  font-size: 75px;
+  padding: none;
+}
+
+h3{
+    font-size: 30px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+h4 {
+  font-size: 27px;
+  font-family:'Josefin Slab', serif;
+  text-align: center;
+}
+
+p {
+  font-size: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  float: right;
+  padding: 75px 0px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  color: #5D5F71;
+  padding-left: 80px;
+  font-weight: bolder;
+}
+
+/***********ABOUT*******/
+#about {
+  background-color: #FFDB8E;
+}
+#about img {
+  height: 400px;
+  width: auto;
+}
+#about p {
+  text-align: left;
+  padding-top: 30px;
+}
+
+/*********SKILLS********/
+#skills {
+  background-color: #ACEDFF;
+}
+
+#skills img {
+  height: 100px;
+  width: auto;
+  padding-top: 90px;
+  display: block;
+  margin: auto;
+}
+
+/*********WORK***********/
+#work{
+  background-color: #FFC1B5;
+}
+#work img {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: auto;
+  padding-top: 90px;
+}
+
+/*********CONTACT***********/
+
+#contact p, a {
+  padding-top: 100px;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+
+
+}
+
+#contact img {
+  display:block;
+  margin: auto;
+  padding-top: 50px;
+  height:350px;
+  width: auto;
+}
