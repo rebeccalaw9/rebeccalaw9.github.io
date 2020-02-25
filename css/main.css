@@ -1,9 +1,13 @@
-/********BASE STYLES*******/
+ /********BASE STYLES*******/
 
 #about, #skills, #work, #contact {
   height: 600px;
-  margin: none;
+  margin: inherit;
 }
+#attributions {
+  height:30px;
+}
+
 /*****GRID*****/
 .full-width {
     width: 1200px;
@@ -14,7 +18,10 @@
     width: 600px;
     float: left;
 }
-
+.two-thirds-width {
+  width: 800px;
+  float:left;
+}
 .third-width {
     width: 400px;
     float: left;
@@ -24,53 +31,78 @@
 
 header {
   height:900px;
-  background: url('../img/hero.png');
-  background-size: cover;
+ 
 }
+
+header::after{
+  content:"";
+ background: url('../img2/desk.png');
+ background-size: auto;
+  opacity: 0.7;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
 section #skills{
   height: 900px;
   background: url('../img/background.png');
   background-size: auto;
 }
  header h1 {
-  font-size: 30px;
-  font-family:'Poiret One', cursive;
-  padding: 75px 0px;
+   margin: 0px 0px;
+  font-size: 250px;
+  font-family: 'Amatic SC', cursive;
+  padding: 70px 0px 0px 0px;
+  text-align: center;
+  font-weight: 900;
 }
 
-header h1, h2 {
-  float: left;
-}
 
 h2, h3 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Sacramento', cursive;
 }
 
 h2 {
-  font-size: 75px;
-  padding: none;
+  font-size: 120px;
+  padding: 0px 0px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 10%;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 50px;
     margin: 0;
+    font-weight: 300;
 }
 
 h4 {
-  font-size: 27px;
-  font-family:'Josefin Slab', serif;
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin: 10px;
 }
 
 p {
-  font-size: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
 }
 
 nav {
-  float: right;
-  padding: 75px 0px;
+  position:absolute;
+  top:0;
+  left:10%;
+  right:0;
+  bottom:0;
+  padding: 15px 0px;
+ 
 }
 
 nav ul li {
@@ -78,67 +110,74 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 20px;
-  font-family: 'Poiret One', cursive;
-  text-decoration: none;
-  color: #5D5F71;
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  color: black;
   padding-left: 80px;
-  font-weight: bolder;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 /***********ABOUT*******/
-#about {
-  background-color: #FFDB8E;
-}
-#about img {
-  height: 400px;
-  width: auto;
-}
-#about p {
-  text-align: left;
-  padding-top: 30px;
-}
+
+
 
 /*********SKILLS********/
-#skills {
-  background-color: #ACEDFF;
+#skills{
+  background: #AAB3B7;
+  
 }
-
 #skills img {
-  height: 100px;
-  width: auto;
   padding-top: 90px;
   display: block;
   margin: auto;
 }
 
 /*********WORK***********/
-#work{
-  background-color: #FFC1B5;
+  #work{
+  background: #FF7575;
 }
-#work img {
-  display: block;
-  margin: auto;
-  height: 100px;
-  width: auto;
-  padding-top: 90px;
-}
+
 
 /*********CONTACT***********/
 
-#contact p, a {
-  padding-top: 100px;
-  color: black;
-  text-decoration: none;
-  font-size: 30px;
-
-
+#contact{
+  background: #BCFFF2;
 }
-
+  
+#email {
+    padding-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px, none;
+  }
+  
 #contact img {
-  display:block;
-  margin: auto;
-  padding-top: 50px;
-  height:350px;
+  border-radius: 50%;
+  border: double 20px;
+  height: 380px;
   width: auto;
+  position: relative;
+  left: 35%;
+  top: 0px;
 }
+  
+/*********ATTRIBUTIONS***********/
+
+#attributions{
+    background: #AAB3B7;
+    
+}
+
+#attributions p, a {
+  font-size: 15px;
+  background:none;
+  color:black;
+  text-decoration: none;
+  margin: 0px;
+}
+
+
+
